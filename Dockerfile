@@ -4,6 +4,7 @@ MAINTAINER Henk van Achterberg <henk@vanachterberg.org>
 
 EXPOSE 8001
 EXPOSE 8002
+EXPOSE 8003
 
 # copy configurations of different sites
 COPY conf /etc/nginx/conf.d/
