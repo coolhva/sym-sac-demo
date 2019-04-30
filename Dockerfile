@@ -2,8 +2,8 @@ FROM nginx:1.15
 
 MAINTAINER Henk van Achterberg <henk@vanachterberg.org>
 
-EXPOSE 8001 8001
-EXPOSE 8002 8001
+EXPOSE 8001
+EXPOSE 8002
 
 # copy configurations of different sites
 COPY conf /etc/nginx/conf.d/
