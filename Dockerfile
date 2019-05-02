@@ -12,6 +12,8 @@ COPY conf /etc/nginx/conf.d/
 # copy the files of the sites
 COPY --chown=www-data:www-data app /app/
 
+RUN chmod -R 755 /app
+
 # Disable daemon mode
 RUN echo "\ndaemon off;" >> /etc/nginx/nginx.conf && \
     # Backup configs
